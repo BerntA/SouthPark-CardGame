@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Card Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="game.js"></script>
+</head>
+
+<body>
+    <header id="gameinfo">
+        <div id="player1" class="activeplayer">
+            <h2>Player 1</h2>
+            <h3>Score: 0</h3>
+        </div>
+        <div id="player2">
+            <h2>Player 2</h2>
+            <h3>Score: 0</h3>
+        </div>
+        <h2 id="timeelapsed">Time Elapsed 00:00</h2>
+        <h3 id="cardsflipped">Total cards flipped: 0</h3>
+    </header>
+    <div id="scoreplr1" class="scoreanim"></div>
+    <div id="scoreplr2" class="scoreanim"></div>
+    <main id="gamebody">
+    </main>
+    <div id="enddialog">
+        <p id="enddialogtext"></p>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="#" onclick="onRetry();">Retry</a>
+                    </td>
+                    <td>
+                        <a href="http://southpark.cc.com/full-episodes">Watch South Park</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="animobject"></div>
+</body>
+
+</html>
